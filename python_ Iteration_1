@@ -1,0 +1,19 @@
+#!/bin/python
+
+def findMinAndMax(L):
+	if L == [ ]:
+		print(None,None)
+		return(None,None)
+	min = L[0]
+	max = L[0]
+	for i in L:
+		if i > max:
+			max = i
+		if i < min:
+			min = i
+	print(min,max)
+	return (min,max)
+
+
+ll = [1,2,3,4]
+findMinAndMax(ll)
